@@ -20,7 +20,7 @@
     <script>
         function onload(){
         var Location = document.getElementById('LocationButton');
-        var LocationText=document.getElementById("LocationText")
+        var LocationText=document.getElementById("LocationText");
         Location.addEventListener("click", function () {
             navigator.geolocation.getCurrentPosition(function(position) {
                 LocationText.innerHTML(position.coords.latitude + ", " + position.coords.longitude);
