@@ -23,8 +23,9 @@
         var LocationText=document.getElementById("LocationText");
         Location.addEventListener("click", function () {
             navigator.geolocation.getCurrentPosition(function(position) {
-                LocationText.innerHTML(position.coords.latitude + ", " + position.coords.longitude);
-            });        });
+                LocationText.innerHTML=(position.coords.latitude + ", " + position.coords.longitude);
+            });
+        });
         }
     </script>
 </head>
